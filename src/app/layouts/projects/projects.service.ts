@@ -18,6 +18,7 @@ export class ProjectsService {
         image: 'sakti-1.png',
         image2: 'sakti-2.png',
         roles: [
+          { name: '👑 Lead Frontend Developer', type: 'info' },
           { name: 'Full Stack Developer', type: 'success' },
           { name: 'Git & Deployment', type: 'warn' }
         ],
@@ -28,7 +29,7 @@ export class ProjectsService {
         ],
         status: 'IN_PROGRESS',
         startDate: new Date('2020-01-30'),
-        rating: 4
+        url: 'https://sakti.kemenkeu.go.id'
       },
       {
         id: '5',
@@ -38,6 +39,7 @@ export class ProjectsService {
         image: 'myintress-1.png',
         image2: 'myintress-2.png',
         roles: [
+          { name: '👑 Lead Frontend Developer', type: 'info' },
           { name: 'Full Stack Developer', type: 'success' },
           { name: 'Git & Deployment', type: 'warn' }
         ],
@@ -49,7 +51,7 @@ export class ProjectsService {
         ],
         status: 'IN_PROGRESS',
         startDate: new Date('2024-09-17'),
-        rating: 5
+        url: 'https://myintress.kemenkeu.go.id'
       },
       {
         id: '2',
@@ -69,7 +71,7 @@ export class ProjectsService {
         status: 'COMPLETED',
         startDate: new Date('2023-03-15'),
         endDate: new Date('2023-08-01'),
-        rating: 5
+        url: 'https://monsakti.kemenkeu.go.id'
       },
       {
         id: '6',
@@ -89,7 +91,6 @@ export class ProjectsService {
         ],
         status: 'IN_PROGRESS',
         startDate: new Date('2025-06-02'),
-        rating: 5
       },
       {
         id: '3',
@@ -111,7 +112,7 @@ export class ProjectsService {
         status: 'COMPLETED',
         startDate: new Date('2024-02-29'),
         endDate: new Date('2025-03-18'),
-        rating: 5
+        url: 'https://kantintresuri.netlify.app/'
       },
       {
         id: '4',
@@ -133,7 +134,7 @@ export class ProjectsService {
         status: 'COMPLETED',
         startDate: new Date('2024-02-02'),
         endDate: new Date('2025-03-04'),
-        rating: 5
+        url: 'https://ikuchecker.netlify.app/'
       },
     ]);
   }

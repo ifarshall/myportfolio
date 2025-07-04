@@ -46,6 +46,8 @@ export class ProjectsComponent {
   }
 
   onProjectClick(project: Project){
-
+    if(project.url){
+      window.open(project.url, '_blank');
+    }
   }
 }

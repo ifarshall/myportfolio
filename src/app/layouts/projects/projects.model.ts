@@ -15,5 +15,5 @@ export interface Project {
   status: 'COMPLETED' | 'IN_PROGRESS' | 'CANCELLED';  // Bisa disesuaikan
   startDate: Date;
   endDate?: Date;
-  rating?: number;
+  url?: string;
 }
