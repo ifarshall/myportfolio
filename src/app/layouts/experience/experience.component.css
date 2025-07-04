@@ -6,10 +6,10 @@
   background: #0054a7;
   color: white;
   -webkit-background-clip:text;
-  -webkit-text-stroke: 20px #0054a7;
+  -webkit-text-stroke: 15px #0054a7;
   -moz-background-clip:text;
   -moz-text-stroke: 15px #0054a7;
-  letter-spacing: -0.175ch;
+  letter-spacing: -0.1ch;
   paint-order: stroke fill;
   text-align: end;
 }

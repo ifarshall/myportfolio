@@ -8,7 +8,7 @@ import { DividerModule } from 'primeng/divider';
 import { TooltipModule } from 'primeng/tooltip';
 import { ExperienceComponent } from './layouts/experience/experience.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { SkillComponent } from "./layouts/skill/skill.component";
+import { ProfilComponent } from "./layouts/profil/profil.component";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +22,7 @@ import { SkillComponent } from "./layouts/skill/skill.component";
     TooltipModule,
     DividerModule,
     FooterComponent,
-    SkillComponent
+    ProfilComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

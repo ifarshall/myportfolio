@@ -1,5 +1,5 @@
 .outline-text h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 900;
   text-transform: uppercase;
   padding: 10px;
@@ -74,4 +74,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.typed-text-wrapper {
+  min-height: 60px;
+  padding: 1rem;
+}
+
+.typed-text {
+  display: inline-block;
+  white-space: pre-line;
 }
