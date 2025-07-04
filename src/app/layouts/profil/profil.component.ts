@@ -32,9 +32,9 @@ export class ProfilComponent implements AfterViewInit {
       strings: [
         "Saya anak kedua dari tiga bersaudara. Lahir di Jakarta, 16 November 1992. Saya sudah menikah, dengan satu putri dan satu putra. Saya menyukai IT sejak kecil karena ayah saya adalah bagian dari tim IT. Saya tumbuh bersama komputer dari Windows 95 hingga sekarang. Awalnya suka karena game. Dota 2 jadi favorit saya. Sekarang saya bekerja di SITP Kementerian Keuangan sebagai developer untuk salah satu core sistem yaitu SAKTI. Fokus saya di modul Administrasi dan Penganggaran."
       ],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
+      typeSpeed: 2,
+      backSpeed: 0,
+      loop: false,
       showCursor: false,
       smartBackspace: false,
       fadeOut: false,

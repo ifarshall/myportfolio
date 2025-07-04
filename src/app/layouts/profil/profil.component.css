@@ -1,17 +1,15 @@
 .outline-text h1 {
-  font-size: 7rem;
+  font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
   padding: 10px;
-  background: #ea2323;
-  color: white;
-  -webkit-background-clip:text;
-  -webkit-text-stroke: 5px #ea2323;
-  -moz-background-clip:text;
-  -moz-text-stroke: 5px #ea2323;
-  letter-spacing: -0.1ch;
+  background: #00a772;
+  background: -webkit-linear-gradient(to left, #0054a7, #4ade80);
+  background: linear-gradient(to left, #0054a7, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   paint-order: stroke fill;
-  text-align: end;
 }
 
 .project-card {

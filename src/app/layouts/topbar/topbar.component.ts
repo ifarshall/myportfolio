@@ -38,8 +38,16 @@ export class TopbarComponent implements OnInit {
         command: () => this.scrollTo('projects')
       },
       {
-        label: 'Experience',
+        label: 'Certificate',
         command: () => this.scrollTo('experience')
+      },
+      {
+        label: 'Journey',
+        command: () => this.scrollTo('journey')
+      },
+      {
+        label: 'Skill',
+        command: () => this.scrollTo('skill')
       },
     ];
   }

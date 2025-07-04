@@ -87,7 +87,7 @@ html,
 body {
   scroll-behavior: smooth;
   height: 100%;
-  overflow-y: scroll;
+  overflow:hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -132,7 +132,7 @@ section {
   color: #3bbfa1; /* atau var(--p-primary-color) kalau pakai PrimeNG theme */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
-  border-left: 4px solid #3bbfa1;
+  border-left: 4px solid rgb(59, 191, 161);
   background: rgba(255, 255, 255, 0.03);
   border-radius: 6px;
 }

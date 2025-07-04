@@ -1,15 +1,14 @@
 .outline-text h1 {
-  font-size: 10rem;
+  font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
   padding: 10px;
   background: #00a772;
-  color: white;
-  -webkit-background-clip:text;
-  -webkit-text-stroke: 20px #00a772;
-  -moz-background-clip:text;
-  -moz-text-stroke: 15px #00a772;
-  letter-spacing: -0.175ch;
+  background: -webkit-linear-gradient(to right, #4ade80, #0054a7);
+  background: linear-gradient(to right, #4ade80, #0054a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   paint-order: stroke fill;
 }
 
