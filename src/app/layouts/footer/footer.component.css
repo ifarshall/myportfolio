@@ -1,0 +1,33 @@
+.app-footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #f3fff8;
+  background-color: #1f1f1f;
+  border-top: 1px solid #ddd;
+  position: relative;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #3bbfa1;
+}
+
+.footer-right {
+  text-align: right;
+}

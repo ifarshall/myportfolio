@@ -1,0 +1,63 @@
+<div class="flex flex-column">
+  <span class="text-6xl font-bold outline-text">
+    <h1 class="m-0">PROJECTS</h1>
+  </span>
+</div>
+<div class="card border-round">
+  <p-dataview #dv [value]="projects()" layout="grid" styleClass="border-round">
+    <ng-template #grid let-items>
+      <div class="grid col px-4">
+        <div
+          *ngFor="let project of items; let i = index"
+          class="col-12 sm:col-6 md:col-4 xl:col-6 p-2"
+        >
+          <div
+            class="project-card cursor-pointer h-20rem"
+            [ngStyle]="{
+              'background-image':
+                'url(/' +
+                (hoveredIndex === i ? project.image2 : project.image) +
+                ')'
+            }"
+            (mouseenter)="hoveredIndex = i"
+            (mouseleave)="hoveredIndex = null"
+            (click)="onProjectClick(project)"
+          >
+            <div class="project-content">
+              <span class="flex justify-content-between align-items-center">
+                <h2>{{ project.name }}</h2>
+                <span [ngClass]="getSeverity(project)">{{project.status}}</span>
+              </span>
+              <p class="text-xs text-blue-300">
+                Sejak {{ project.startDate | date:'dd MMMM yyyy' }} s.d
+                {{ project.endDate ? (project.endDate | date:'dd MMMM yyyy') : 'Sekarang' }}
+              </p>
+              <p>{{ project.description }}</p>
+              <div class="tech-tags">
+                <p-tag
+                  *ngFor="let tech of project.technologies"
+                  [value]="tech.name"
+                  class="mr-2 mb-2"
+                  severity="secondary"
+                  rounded
+                ></p-tag>
+              </div>
+              <hr>
+              <div class="role-tags mt-2">
+                Saya bekerja sebagai
+                <p-tag
+                  *ngFor="let role of project.roles"
+                  [value]="role.name"
+                  [severity]="role.type"
+                  class="mr-2 mb-2"
+                  rounded
+                ></p-tag>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataview>
+</div>
+<div class="flex align-items-center w-full justify-content-around"></div>

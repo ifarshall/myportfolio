@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@fontsource/montserrat/index.css";
+@import "@fontsource/montserrat/latin.css";
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wendy {
+  font-family: 'Wendy One', 'Montserrat', sans-serif;
+}
+
+body {
+  margin:0;
+  overflow-x:hidden;
+}
+
+/* FADE IN FROM TOP TO DOWN */
+.fade-in-top-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInTopDown 0.8s ease-out forwards;
+}
+
+@keyframes fadeInTopDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FADE IN FROM BOTTOM TO UP */
+.fade-in-bottom-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInBottomUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInBottomUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FADE IN FROM RIGHT TO LEFT */
+.fade-in-right-left {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInRightLeft 0.8s ease-out forwards;
+}
+
+@keyframes fadeInRightLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* FADE IN FROM LEFT TO RIGHT */
+.fade-in-left-right {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeftRight 0.8s ease-out forwards;
+}
+
+@keyframes fadeInLeftRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

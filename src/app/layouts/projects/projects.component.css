@@ -1,0 +1,76 @@
+.outline-text h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #00a772;
+  color: white;
+  -webkit-background-clip:text;
+  -webkit-text-stroke: 20px #00a772;
+  -moz-background-clip:text;
+  -moz-text-stroke: 15px #00a772;
+  letter-spacing: -0.175ch;
+  paint-order: stroke fill;
+}
+
+.project-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.5rem; /* setara dengan p-6 */
+  border: 1px solid #4ade80; /* green-400 */
+  border-radius: 0.5rem;
+  background-color: var(--surface-0);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 200px;
+}
+
+/* Overlay hitam */
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* warna hitam semi-transparan */
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Saat hover, overlay menghilang */
+.project-card:hover::before {
+  opacity: 0;
+}
+
+/* Konten teks */
+.project-card .project-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+/* Saat hover, kontennya juga hilang */
+.project-card:hover .project-content {
+  opacity: 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+:host ::ng-deep .p-dataview-content {
+  border-radius: 10px;
+  background: rgba(255,255,255,0.5);
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

@@ -1,0 +1,29 @@
+<div class="flex align-items-center w-full justify-content-around">
+  <div class="flex flex-column text-2xl">
+    <span>Hai,</span>
+    <span>Nama saya</span>
+    <span style="width:fit-content;" class="glowing-border text-5xl font-bold" pTooltip="Panggil aja Ical">
+      Ricaldi Farshall
+    </span>
+    <span class="text-green-600 mt-2">
+      I enjoy technology—especially when it meets design. Though I’m capable as
+      a fullstack developer, destiny keeps assigning me to the frontend.
+    </span>
+    <span class="text-sm text-black-alpha-50">
+      5 years of experience at SITP DJPb, Ministry of Finance
+    </span>
+  </div>
+  <div>
+    <img src="/me.jpg" width="600" class="hero-image" />
+  </div>
+</div>
+<span
+  *ngIf="showScrollHint"
+  class="flex align-items-center gap-2"
+  [ngClass]="{ 'fade-in': showScrollHint }"
+>
+  <a class="cursor-pointer" (click)="scrollTo('projects')">
+    Informasiku lainnya, scroll kebawah
+    <i class="fi fi-br-arrow-turn-down-right mirror-icon bounce-vertical"></i>
+  </a>
+</span>

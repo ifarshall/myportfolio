@@ -1,0 +1,150 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.hero-image {
+  mask-image: url("/splash-mask.svg");
+  mask-size:contain;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  will-change: transform, filter;
+}
+
+.hero-image:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+.bg-linear-primary {
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--p-primary-color) 50%,
+    transparent 100%
+  );
+}
+
+
+.glowing-border {
+  --gradient-glow: transparent 70%,#3bbfa1;
+  background: linear-gradient(canvas 0 0) padding-box,
+              conic-gradient(from var(--angle),var(--gradient-glow)) border-box;
+  border: solid 3px transparent;
+  border-radius:10px;
+  margin-top:10px;
+  padding:.5em;
+  position: relative;
+  isolation: isolate;
+  animation: 5s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.mirror-icon {
+  transform: scaleX(-1) rotate(90deg) translateX(5px);
+  display: inline-block;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce-vertical {
+  animation: bounceY 1s ease-in-out infinite;
+}
+
+@keyframes bounceY {
+  0%, 100% {
+    transform: scaleX(-1) rotate(90deg) translateX(5px);
+  }
+  50% {
+    transform: scaleX(-1) rotate(90deg) translateX(10px);
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-divider {
+  width: 2px;
+  height: 500px;
+  background: linear-gradient(to bottom, transparent, #3bbfa1, transparent);
+  margin: 2rem auto;
+  opacity: 0.7;
+  animation: pulse 2s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+}
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.quote-text {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #3bbfa1; /* atau var(--p-primary-color) kalau pakai PrimeNG theme */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  border-left: 4px solid #3bbfa1;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+
+.tech-icon {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  will-change: filter;
+}
+
+.tech-icon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}

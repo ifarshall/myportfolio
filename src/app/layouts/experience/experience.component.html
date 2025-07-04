@@ -1,0 +1,34 @@
+<div class="flex flex-column">
+  <span class="text-6xl font-bold outline-text">
+    <h1 class="m-0">EXPERIENCE</h1>
+  </span>
+</div>
+<div class="card mt-4">
+  <p-table stripedRows showGridlines [value]="exps" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template #header>
+          <tr>
+              <th>Kategori</th>
+              <th>Institusi</th>
+              <th>Peran</th>
+              <th>Tahun</th>
+              <th>Keterangan</th>
+          </tr>
+      </ng-template>
+      <ng-template #body let-exp>
+          <tr>
+              <td>{{ exp.type }}</td>
+              <td>{{ exp.institution }}</td>
+              <td>{{ exp.role }}</td>
+              <td>{{ exp.year }}</td>
+              <td>{{ exp.description }}
+                <p-button *ngIf="exp.image" icon="pi pi-search" [rounded]="true" [text]="true" severity="info" (click)="op.toggle($event)" />
+                <p-popover #op>
+                  <div class="flex flex-col gap-4">
+                    <p-image appendTo="body" [src]="exp.image" [alt]="exp.description" width="250" [preview]="true" />
+                  </div>
+                </p-popover>
+              </td>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>
