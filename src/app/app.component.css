@@ -83,16 +83,8 @@
   }
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-  height: 100%;
-  overflow:hidden;
-  scroll-snap-type: y mandatory;
-}
 
 section {
-  scroll-snap-align: start;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

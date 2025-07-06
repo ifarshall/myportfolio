@@ -16,7 +16,6 @@ export class HeroComponent implements AfterViewInit {
   @ViewChild('typedNameEl', { static: false }) typedNameEl!: ElementRef;
 
   name = 'Ricaldi Farshall';
-  private typed?: Typed;
 
   showScrollHint: boolean = false;
   nameHover: boolean = false;
