@@ -11,6 +11,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { ProfilComponent } from "./layouts/profil/profil.component";
 import { JourneyComponent } from './layouts/journey/journey.component';
 import { SkillComponent } from './layouts/skill/skill.component';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
@@ -26,11 +27,22 @@ import { SkillComponent } from './layouts/skill/skill.component';
     FooterComponent,
     JourneyComponent,
     ProfilComponent,
-    SkillComponent
+    SkillComponent,
+    ButtonModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
 
+  isVisible: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isVisible = window.pageYOffset > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -50,4 +50,16 @@
     </section>
     <app-footer></app-footer>
   </div>
+  <button
+    *ngIf="isVisible"
+    pButton
+    type="button"
+    icon="pi pi-chevron-up"
+    pTooltip="Scroll to top"
+    tooltipPosition="left"
+    (click)="scrollToTop()"
+    class="fixed fadein animation-duration-500 bottom-0 right-0 z-5 border-round p-button-rounded"
+    style="margin-right:20px;margin-bottom:20px;"
+    >
+  </button>
 </div>
