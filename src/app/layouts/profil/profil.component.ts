@@ -30,7 +30,9 @@ export class ProfilComponent implements AfterViewInit {
   startTyping(): void {
     this.typed = new Typed(this.typedElement.nativeElement, {
       strings: [
-        "Saya anak kedua dari tiga bersaudara. Lahir di Jakarta, 16 November 1992. Saya sudah menikah, dengan satu putri dan satu putra. Saya menyukai IT sejak kecil karena ayah saya adalah bagian dari tim IT. Saya tumbuh bersama komputer dari Windows 95 hingga sekarang. Awalnya suka karena game. Dota 2 jadi favorit saya. Sekarang saya bekerja di SITP Kementerian Keuangan sebagai developer untuk salah satu core sistem yaitu SAKTI. Fokus saya di modul Administrasi dan Penganggaran."
+        `I'm a passionate developer with a strong interest in frontend technologies. My love for IT started early, inspired by my family's background and years spent growing up around computers—from Windows 95 to modern frameworks.
+        What began as a fascination with games eventually led me to the world of programming. Now, I work as a frontend developer on core national systems, with a focus on clean design, performance, and user experience.
+        Outside of coding, I enjoy gaming, Japanese culture, and watching anime. These passions influence my creativity and help me think beyond just lines of code.`
       ],
       typeSpeed: 2,
       backSpeed: 0,

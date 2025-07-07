@@ -54,7 +54,7 @@ export class ExperienceService {
         id: '5',
         type: 'Pelatihan',
         institution: 'Kominfo & Dicoding',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2020',
         description: 'Online Academy Digital Talent Scholarship 2020 - Augmented Reality',
         image: '/augmented-dicoding.png'
@@ -63,81 +63,82 @@ export class ExperienceService {
         id: '6',
         type: 'Pelatihan',
         institution: 'Kominfo & DQLab',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2021',
-        description: 'Pelatihan Data Scientist Program Professional Academy - Digital Talent Scholarship',
+        description: 'Training Data Scientist Program Professional Academy - Digital Talent Scholarship',
         image: '/data-science-dqlab.png'
       },
       {
         id: '7',
         type: 'Pelatihan',
         institution: 'Kominfo & Skilvul',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2021',
-        description: 'Pelatihan "UI/UX Design (Team Project)" oleh Digitalent Kominfo',
+        description: 'Training "UI/UX Design (Team Project)" By Digitalent Kominfo',
         image: '/ui-ux-skilvul.png'
       },
       {
         id: '8',
         type: 'Pelatihan',
         institution: 'Kemenkeu',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2021',
-        description: 'Pelatihan Jarak Jauh Framework Angular',
+        description: 'Online Course Framework Angular',
         image: '/angular-fundamental.png'
       },
       {
         id: '9',
         type: 'Pelatihan',
         institution: 'Kemenkeu',
-        role: 'Lulus - Terbaik Kedua',
+        role: 'Graduate - Second Best',
         year: '2022',
-        description: 'Pelatihan Jarak Jauh Java Fundamental',
+        description: 'Online Course Java Fundamental',
         image: '/java-fundamental.png'
       },
       {
         id: '10',
         type: 'Pelatihan',
         institution: 'Kemenkeu',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2022',
-        description: 'Pelatihan Jarak Jauh Java Advance',
+        description: 'Online Course Java Advance',
         image: '/java-advance.png'
       },
       {
         id: '14',
         type: 'Pelatihan',
         institution: 'Kominfo & Cisco',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2022',
-        description: 'Pelatihan Python pada Program Professional Academy Digitalent Kominfo',
+        description: 'Training Python on Program Professional Academy Digitalent Kominfo',
         image: '/python-cisco.png'
       },
       {
         id: '11',
         type: 'Pelatihan',
         institution: 'Kemenkeu',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2024',
-        description: 'Pelatihan Treasury Data Analysis (Machine Learning)',
+        description: 'Training Treasury Data Analysis (Machine Learning)',
         image: '/machine-learning.png'
       },
       {
         id: '12',
         type: 'Pelatihan',
         institution: 'Kominfo & Alibaba',
-        role: 'Lulus',
+        role: 'Graduate',
         year: '2024',
-        description: 'Pelatihan Alibaba Big Data Professional Academy Digital Talent Scholarship 2024',
+        description: 'Training Alibaba Big Data Professional Academy Digital Talent Scholarship 2024',
         image: '/alibaba-cloud.png'
       },
       {
         id: '13',
         type: 'Pelatihan',
         institution: 'Kemenkeu',
-        role: 'Lulus - Terbaik Pertama',
+        role: 'Graduate - Best of the best',
         year: '2025',
-        description: 'Pelatihan Angular 14'
+        description: 'Training Angular 14 by NQA Indonesia',
+        image: '/angular-certificate.png'
       },
     ]);
   }

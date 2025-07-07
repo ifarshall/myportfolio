@@ -34,7 +34,7 @@ export class TopbarComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Projects',
+        label: 'Project',
         command: () => this.scrollTo('projects')
       },
       {
@@ -46,7 +46,7 @@ export class TopbarComponent implements OnInit {
         command: () => this.scrollTo('journey')
       },
       {
-        label: 'Skill',
+        label: 'Capability',
         command: () => this.scrollTo('skill')
       },
     ];

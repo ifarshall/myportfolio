@@ -1,15 +1,17 @@
 <div class="flex flex-column">
   <span class="text-6xl font-bold outline-text">
     <h1 class="m-0">PROJECTS</h1>
+    <hr>
+    <p class="text-sm font-normal text-center">Throughout my journey as a software developer, I’ve had the opportunity to work on a diverse range of projects that challenged me both technically and creatively. From designing seamless user interfaces to integrating powerful backend services and third-party APIs, each project has contributed to my growth and sharpened my problem-solving skills. Below are some of the key projects I've been involved in, along with the roles I played and the technologies I worked with.</p>
   </span>
 </div>
 <div class="card border-round">
   <p-dataview #dv [value]="projects()" layout="grid" styleClass="border-round">
     <ng-template #grid let-items>
-      <div class="grid col px-4">
+      <div class="grid m-0 px-4">
         <div
           *ngFor="let project of items; let i = index"
-          class="col-12 sm:col-6 md:col-4 xl:col-6 p-2"
+          class="col-12 sm:col-6 md:col-4 xl:col-6"
         >
           <div
             class="project-card cursor-pointer min-h-20rem"
@@ -29,8 +31,8 @@
                 <span [ngClass]="getSeverity(project)">{{project.status}}</span>
               </span>
               <p class="text-xs text-blue-300">
-                Sejak {{ project.startDate | date:'dd MMMM yyyy' }} s.d
-                {{ project.endDate ? (project.endDate | date:'dd MMMM yyyy') : 'Sekarang' }}
+                Since {{ project.startDate | date:'dd MMMM yyyy' }} until
+                {{ project.endDate ? (project.endDate | date:'dd MMMM yyyy') : 'Now' }}
               </p>
               <p>{{ project.description }}</p>
               <div class="tech-tags">
@@ -44,7 +46,7 @@
               </div>
               <hr>
               <div class="role-tags mt-2">
-                Saya bekerja sebagai
+                I work as
                 <p-tag
                   *ngFor="let role of project.roles"
                   [value]="role.name"

@@ -13,7 +13,7 @@ export class ProjectsService {
       {
         id: '1',
         name: 'SAKTI',
-        description: 'Aplikasi keuangan nasional yang digunakan satuan kerja untuk pengelolaan anggaran dan pelaporan keuangan.',
+        description: 'A national financial application used by government work units for budget management and financial reporting.',
         client: 'Stakeholder DJPb & Kementerian/Lembaga',
         image: 'sakti-1.png',
         image2: 'sakti-2.png',
@@ -34,7 +34,7 @@ export class ProjectsService {
       {
         id: '5',
         name: 'MyIntress',
-        description: 'Aplikasi integrasi data antara SAKTI dan SPAN untuk mendukung pelaporan keuangan yang lebih simple.',
+        description: 'An integration platform between SAKTI and SPAN to support more streamlined financial reporting across agencies.',
         client: 'Stakeholder DJPb & Kementerian/Lembaga',
         image: 'myintress-1.png',
         image2: 'myintress-2.png',
@@ -56,7 +56,7 @@ export class ProjectsService {
       {
         id: '2',
         name: 'Monsakti',
-        description: 'Aplikasi monitoring untuk memantau aktivitas dan data keuangan dari SAKTI.',
+        description: 'A monitoring tool to track activities and financial data from the SAKTI platform.',
         client: 'Stakeholder DJPb & Kementerian/Lembaga',
         image: 'monsakti-1.png',
         image2: 'monsakti-2.png',
@@ -76,7 +76,7 @@ export class ProjectsService {
       {
         id: '6',
         name: 'Impact',
-        description: 'Aplikasi inovasi untuk manajemen aset, SDM TIK, dan inisiatif internal DJPb.',
+        description: 'An innovation platform for asset management, ICT human resources, and internal initiatives within DJPb.',
         client: 'Internal SITP DJPb',
         image: 'impact-1.png',
         image2: 'impact-2.png',
@@ -95,7 +95,7 @@ export class ProjectsService {
       {
         id: '3',
         name: 'Kantin Tresury',
-        description: 'Aplikasi informasi menu harian untuk kantin DJPb.',
+        description: 'A daily menu information app for the DJPb office canteen.',
         client: 'Kantin Perbendaharaan',
         image: 'kantintreasury-1.png',
         image2: 'kantintreasury-2.png',
@@ -117,7 +117,7 @@ export class ProjectsService {
       {
         id: '4',
         name: 'IKU Calculator',
-        description: 'Aplikasi internal untuk menghitung indikator kinerja pegawai.',
+        description: 'An internal tool for calculating employee performance indicators (KPI).',
         client: 'Inisiatif Internal DJPb',
         image: 'ikuchecker-1.png',
         image2: 'ikuchecker-2.png',

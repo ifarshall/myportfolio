@@ -1,7 +1,7 @@
 <p-menubar [model]="items" styleClass="border-none border-bottom-2">
   <ng-template #start>
     <div class="flex border-right-2 surface-border pr-4">
-      <img src="v-logo.png" class="cursor-pointer" (click)="scrollTo('hero')" height="50">
+      <img src="v-logo-new.png" class="cursor-pointer" (click)="scrollTo('hero')" height="50">
       <a class="cursor-pointer flex flex-column align-items-center" (click)="scrollTo('hero')">
         <h1 class="font-bold text-primary m-0">ARSHALL</h1>
         <p class="m-0 text-xs">Full Stack Developer</p>
@@ -18,7 +18,7 @@
 </ng-template>
   <ng-template #end>
     <div class="flex flex-wrap align-items-center text-2xl gap-2">
-      <p-button pRipple tooltipPosition="left" pTooltip="Reach Me On Instagram" icon="pi pi-instagram" severity="danger" [outlined]="true" (onClick)="reachByIg()"/>
+      <!-- <p-button pRipple tooltipPosition="left" pTooltip="Reach Me On Instagram" icon="pi pi-instagram" severity="danger" [outlined]="true" (onClick)="reachByIg()"/> -->
       <p-button pRipple tooltipPosition="left" pTooltip="Reach Me On Github" icon="pi pi-github" severity="info" [outlined]="true" (onClick)="reachByGithub()"/>
     </div>
   </ng-template>
